@@ -28,6 +28,12 @@ $ docker run -d --name chaos-gitlab \
     yrzr/gitlab-ce-arm64v8:14.10.5-ce.0
 ```
 
-- <http://localhost:8080>
+- <http://localhost:8080> root/密码参见文件config/initial_root_password
 
-## 查看进程树
+## 关闭注册验证
+
+- <http://localhost:8080/admin/application_settings/general>  Sign-up restrictions 取消勾选 Require admin approval for new sign-ups
+
+## 头像配置优化
+
+- <http://localhost:8080/admin/application_settings/general> Account and limit 取消勾选：Gravatar enabled

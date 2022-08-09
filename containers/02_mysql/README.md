@@ -17,7 +17,11 @@ $ docker run -d --name chaos-mysql \
 	-e MYSQL_ROOT_PASSWORD=mysql@chaos \
 	-v mysql-data:/var/lib/mysql \
 	mysql:8.0.29 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+# root/mysql@chaos
 ```
+
+## Schema
 
 ## 客户端
 

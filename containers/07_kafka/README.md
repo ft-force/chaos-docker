@@ -18,6 +18,7 @@ $ docker run -d --name chaos-kafka \
     -e KAFKA_BROKER_ID=1 \
     -e KAFKA_LISTENERS=PLAINTEXT://:9092 \
     -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://:9092 \
+    -v kafka-data:/KAFKA \
     --link chaos-zookeeper:zookeeper \
 	wurstmeister/kafka:2.13-2.8.1
 ```
